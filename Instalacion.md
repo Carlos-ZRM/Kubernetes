@@ -15,7 +15,7 @@ Previo a la instalación de Kubernetes es importante verificar que se cuentan so
 	sudo swapoff -a
 	```
 * Tener habilitados los siguientes puertos
-	| Protocolo | Puerto | Propósito | Usado por |
-	|-----------|--------|-----------|-----------|
-	|TCP        |6443    |Kubernetes API Server | Todos|
-	|TCP        |2379-2380|etcd server client API | kube-apiserver, etcd|
+| Protocolo | Puerto | Propósito | Usado por |
+|-----------|--------|-----------|-----------|
+| TCP        | 6443    | Kubernetes API Server | Todos|
+| TCP        | 2379-2380| etcd server client API | kube-apiserver, etcd|
