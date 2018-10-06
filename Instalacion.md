@@ -190,6 +190,25 @@ Para verificar que el nodo se ha añadido correctamente al cluster ejecutamos el
 ```bash
 kubectl get nodes
 ```
-# Posibles Issues
+## Eliminar el Cluster
+
+Para llevar a cabo una eliminación correcta del cluster es necesario drenar los nodos y eliminarlos, los comandos que permiten esto son (Desde el nodo Master):
+```bash
+kubectl drain <node name> --delete-local-data --force --ignore-daemonsets
+kubectl delete node <node name>
+```
+Segudido de esto ejecutamos 
+```bash
+kubeadm reset
+```
+en cada nodo y en el master, con el fin de eliminar la configuración creada por el kubeadm.
+
+Adicionalmente a los comandos anteriores se recomienda ejecutar:
+```bash
+sudo docker-system-prune
+```
+en cada uno de los nodos y del master, con el fin de liberar el espacio ocupado por todas las imagenes y los contenedores creados por Kubernetes.
+
+## Posibles Issues
 * Verificar que el nodo Master sepa como llegar a cada Worker, ya sea por el DNS al que apunta el Master o bien a traves de la configuración en el archivo **/etc/hosts**, asi como configurar las variables de no proxy.
 * En caso de ser necesario exportar las variables de proxy, para tener salida internet.
