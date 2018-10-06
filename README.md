@@ -2,7 +2,7 @@
 
 ![Kubernetes](https://davtincas.files.wordpress.com/2018/05/kubernetes-logo1.png)
 
-Kubernet1es, k8s (abreviatura que se forma conla primera k, el 8, que representa los 8 caracteres de en medio, y luego la s) o "kube" para ser breves, es una plataforma de open source que automatiza las operaciones de un contenedor de Linux. Elimina muchos de los procesos manuales involucrados en la implementación y escalabilidad de las aplicaciones en contenedores. En otras palabras, puede crear un clúster de grupos de hosts que ejecutan contenedores de Linux, y Kubernetes lo ayuda a administrar con facilidad y eficacia esos clústeres. Estos clústeres pueden comprender hosts en nubes públicas, privadas o híbridas.
+Kubernetes, k8s (abreviatura que se forma conla primera k, el 8, que representa los 8 caracteres de en medio, y luego la s) o "kube" para ser breves, es una plataforma de open source que automatiza las operaciones de un contenedor de Linux. Elimina muchos de los procesos manuales involucrados en la implementación y escalabilidad de las aplicaciones en contenedores. En otras palabras, puede crear un clúster de grupos de hosts que ejecutan contenedores de Linux, y Kubernetes lo ayuda a administrar con facilidad y eficacia esos clústeres. Estos clústeres pueden comprender hosts en nubes públicas, privadas o híbridas.
 
 Con Kubernetes usted puede:
 
