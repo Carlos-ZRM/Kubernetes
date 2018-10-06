@@ -9,3 +9,8 @@ Previo a la instalación de Kubernetes es importante verificar que se cuentan so
 	* Fedora 25/26
 * Minimo 2 GB en memoria RAM
 * Minimo 2 Cores en cada máquina
+* Tener desactivada la memoria swap
+	* Para desactivar la memoria swap basta con ejecutar el siguiente comando:
+	```bash
+	sudo swapoff -a
+	```
