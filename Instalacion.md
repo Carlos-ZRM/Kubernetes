@@ -91,7 +91,7 @@ Para crear el nodo master es necesario ejecutar el comando
 ```bash
 sudo kubeadm init
 ```
-**NOTA**: kubeadm utiliza la interfaz de red a la cual esta asociada por defecto la máquina, sin embargo si se tiene otra interfaz, por la cual el mastr sabe como llegar a los workers, es necesario especificarla a tráves de la bandera **--apiserver-advertise-address** la cual recibe como parámetro la IP asociada en esa interfaz. De tal manera que el comando se reescribiría de la siguiente forma:
+**NOTA**: kubeadm utiliza la interfaz de red a la cual esta asociada por defecto la máquina, sin embargo si se tiene otra interfaz, por la cual el master sabe como llegar a los workers, es necesario especificarla a tráves de la bandera **--apiserver-advertise-address** la cual recibe como parámetro la IP asociada en esa interfaz. De tal manera que el comando se reescribiría de la siguiente forma:
 ```bash
 sudo kubeadm init --apiserver-advertise-address = < ip-address >
 ```
@@ -147,6 +147,7 @@ as root:
   kubeadm join --token < token > < master-ip >: < master-port > --discovery-token-ca-cert-hash sha256: < hash >
 ```
 Después de dicha salida, para poder hacer uso del cluster es necesario ejecutar los siguientes comandos:
+
 **En caso de ser un usuario regular**
 ```bash
 rm -rf $HOME/.kube
