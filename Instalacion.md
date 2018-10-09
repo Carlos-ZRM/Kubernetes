@@ -167,11 +167,11 @@ La instalación de Weave Net consiste en la ejecución del siguiente comando:
 ```bash
 kubectl apply -f "https://cloud.weave.works/k8s/net?k8s-version=$(kubectl version | base64 | tr -d '\n')"
 ```
-**NOTA**: Si se desea instalar algun otro pod network como **Calico** o **Flanel** es necesario verificar que el las IP's del segmento de red no se encuentren ocupadas, de lo contrario esto generará problemas respecto a que ya hay IP's ocupadas.
+**NOTA**: Si se desea instalar algun otro pod network como **Calico** o **Flanel** es necesario verificar que las IP's del segmento de red no se encuentren ocupadas, de lo contrario esto generará problemas por indisponibilidad de las IP's.
 
 ### Agregar los Workers al Cluster
 
-Para añadir un nodo al cluster basta con dentro del nodo, el comando:
+Para añadir un nodo al cluster basta con ejecutar dentro del nodo, el comando:
 ```bash
 sudo kubeadm join --token < token > < master-ip >: < master-port > --discovery-token-ca-cert-hash sha256: < hash >
 ```
