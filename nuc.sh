@@ -21,7 +21,7 @@ sudo systemctl enable kubelet && systemctl start kubelet
 sudo systemctl daemon-reload
 sudo systemctl restart kubelet
 
-#sudo kubeadm init
+#sudo kubeadm init --pod-network-cidr=10.244.0.0/16 --cri-socket=/var/run/crio/crio.sock
 
 #rm -rf $HOME/.kube
 #mkdir -p $HOME/.kube
