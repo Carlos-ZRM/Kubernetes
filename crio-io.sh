@@ -1,3 +1,4 @@
+#!/bin/bash
 modprobe overlay
 modprobe br_netfilter
 
@@ -9,11 +10,11 @@ net.bridge.bridge-nf-call-ip6tables = 1
 EOF
 
 sysctl --system
-
+yum install yum-utils -y
 # Install prerequisites
 yum-config-manager --add-repo=https://cbs.centos.org/repos/paas7-crio-311-candidate/x86_64/os/
 
 # Install CRI-O
-yum install --nogpgcheck cri-o
+yum install --nogpgcheck cri-o -y
 
 systemctl start crio

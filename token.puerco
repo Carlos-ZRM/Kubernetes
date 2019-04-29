@@ -1,1 +1,1 @@
-kubeadm join 172.16.10.11:6443 --token fbnzwb.3wq0ugwqhkgq8vw6     --discovery-token-ca-cert-hash sha256:e35eddcfdd4dca995021a512c9b60013cad6eb4ba33766ff3605472016ad90cc 
+kubeadm join 172.16.10.11:6443 --token dxum0g.4kwk4eq1p3f2hlp2     --discovery-token-ca-cert-hash sha256:a4a1751ba62fd05577b7431ac23779d30ef81c2dde8a5e693a6d2892b4813a40 
