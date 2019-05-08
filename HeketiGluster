@@ -1,0 +1,1 @@
+mkdir -p /data/heketi/{db,.ssh} && chmod 700 /data/heketi/.ssh
